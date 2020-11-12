@@ -38,6 +38,8 @@
 #define SC_SYMBOL_EXPORT __attribute__((__dllexport__))
 #define SC_SYMBOL_IMPORT __attribute__((__dllimport__))
 #else
+#include <cstdint>
+#include <cstddef>
 #define SC_SYMBOL_EXPORT __attribute__((__visibility__("default")))
 #define SC_SYMBOL_IMPORT
 #endif
